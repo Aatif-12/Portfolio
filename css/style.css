@@ -235,7 +235,8 @@ span {
   gap: 9rem;
 }
 .skills-con h4 {
-  text-align: center;
+  text-align: start;
+  margin-left: 3rem;
   font-size: 2.8rem;
 }
 .skills-con div ul {
