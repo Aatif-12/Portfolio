@@ -294,6 +294,7 @@ span {
 }
 
 .portfolio-box img {
+  height: 25rem;
   width: 100%;
   transition: 0.5s ease;
 }
