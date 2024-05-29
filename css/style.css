@@ -586,11 +586,14 @@ span {
   .skills {
     width: 100vw;
   }
+  .portfolio-layer h4 {
+    margin-top: 1.5rem;
+  }
   .portfolio-container {
     grid-template-columns: 1fr;
   }
   .skills-con {
-    gap: 5rem;
+    gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -603,6 +606,9 @@ span {
   .contact form .input-box input {
     width: 100%;
   }
+  .skills-con div ul li {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 365px) {
@@ -612,6 +618,9 @@ span {
 
   .about-img {
     width: 90vw;
+  }
+  .portfolio-layer h4 {
+    margin-top: 0.9rem;
   }
 
   .footer {

@@ -52,7 +52,10 @@
             ><i class="bx bxl-instagram"></i
           ></a>
         </div>
-        <a href="img/AatifResume.pdf" target="_blank" class="btn"
+        <a
+          href="img/AatifPothawaleResume (2) (1).pdf"
+          target="_blank"
+          class="btn"
           >Download CV</a
         >
       </div>
@@ -71,7 +74,7 @@
 
       <div class="about-content">
         <h2 class="heading">About <span>Me</span></h2>
-        <h3>Fronted Developer</h3>
+        <h3>Web Developer</h3>
         <p>
           Welcome to my portfolio! I'm Aatif Pothawale, a third-year B.Tech
           student majoring in Computer Science at G H Raisoni College of
@@ -209,22 +212,38 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
 
-      <form action="#">
+      <form
+        action="https://api.web3forms.com/submit"
+        name="contact_form"
+        method="post"
+      >
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="mail" placeholder="Email Address" />
+          <input
+            type="hidden"
+            placeholder="Full Name"
+            name="access_key"
+            value="20c55b7d-46bf-49d5-9ec3-a302fcad5473"
+          />
+          <input type="text" placeholder="Full Name" name="FullName" required />
+          <input
+            type="mail"
+            placeholder="Email Address"
+            name="Email"
+            required
+          />
         </div>
         <div class="input-box">
-          <input type="" placeholder="Mob Number" />
-          <input type="text" placeholder="Email Subject" />
+          <input type="" placeholder="Mob Number" name="Mobile" required />
+          <input type="text" placeholder="Email Subject" name="Subject" />
         </div>
         <textarea
-          name=""
+          name="Message"
           id=""
           cols="30"
           rows="10"
           placeholder="Your Message"
         ></textarea>
+        <div class="h-captcha" data-captcha="true"></div>
         <input type="submit" class="btn" value="Send Message" />
       </form>
     </section>
@@ -247,6 +266,7 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
 
+    <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="js/script.js"></script>
   </body>
 </html>

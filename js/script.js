@@ -20,7 +20,7 @@ window.onscroll = () => {
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
 
-        if(top >= offset && top < offset + height){
+        if (top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
@@ -46,7 +46,7 @@ ScrollReveal({
     delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .heading, .skill-heading' , { origin: 'top' });
+ScrollReveal().reveal('.home-content, .heading, .skill-heading', { origin: 'top' });
 
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
 
@@ -58,8 +58,8 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 // type js
 
-const typed = new Typed('.multiple-text',{
-    strings: ['Fronted Developer', 'Data Science'],
+const typed = new Typed('.multiple-text', {
+    strings: ['Web Developer', 'Software Developer', 'Video Editor'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
